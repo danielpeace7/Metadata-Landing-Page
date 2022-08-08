@@ -724,7 +724,7 @@ nav a {
   color: #2B2B2B;
 }
 
-.btn {
+.question {
   font-family: 'Lato', sans-serif;
   width: 700px;
   display: flex;
@@ -745,7 +745,7 @@ nav a {
   transition: all 0.3s ease-in-out;
 }
 
-.btn:focus {
+.question:focus {
   background-color: #FFB42B;
 }
 
@@ -754,13 +754,13 @@ nav a {
   transition: all 0.3s ease-in-out;
 }
 
-.button {
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.answers {
+.answer {
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
@@ -775,6 +775,29 @@ nav a {
   color: #2B2B2B;
   display: none;
 }
+
+/*BUNMI's ADDED CODE FOR FAQ  */
+p{
+  width: 100%;
+}
+.question P{
+  position: relative;
+}
+.question P::after{
+  content: url(/images/open.svg);
+  position: absolute;
+  right: 0;
+}
+
+.faq .content.active .answer{
+  display: block;
+}
+
+.faq .content.active .question P::after{
+  content: url(/images/close.svg);
+}
+
+/*BUNMI's ADDED CODE FOR FAQ  */
 
 .open-answer {
   display: block;
