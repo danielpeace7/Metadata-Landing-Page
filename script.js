@@ -24,19 +24,34 @@ menuItems.forEach(
   }
 )
 
-const openMenu = document.getElementById("answers")
-const openBtn = document.getElementById("open-btn")
+
+
+// BUNMI's FAQ CODE
+
+const contents = document.getElementsByClassName('content');
+for (i = 0; i<contents.length; i++){
+ let faqContent = contents[i];
+ function openContent(){
+this.classList.toggle('active');
+}
+faqContent.addEventListener('click', openContent)
+}
+
+// BUNMI's FAQ CODE
+
+// const openMenu = document.getElementById("answers")
+// const openBtn = document.getElementById("open-btn")
 // // const openFaq = document.querySelector(".open")
 // // const closeMenu = document.getElementById("close")
 // // const closeFaq = document.querySelector(".close")
 
-function openButton() {
-  openMenu.classList.add("open-answer")
+// function openButton() {
+//   openMenu.classList.add("open-answer")
   // ) {
   //   openBtn.classList.remove("close-btn")
   //   openMenu.classList.add("open-button")
   // }
-}
+// }
 
 // function closeButton() {
 //   openMenu.classList.remove("open-answer")
